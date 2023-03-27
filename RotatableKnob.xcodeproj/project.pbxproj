@@ -13,7 +13,24 @@
 		5033B86B299CB68900AE6E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5033B869299CB68900AE6E2F /* Main.storyboard */; };
 		5033B86D299CB68A00AE6E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5033B86C299CB68A00AE6E2F /* Assets.xcassets */; };
 		5033B870299CB68A00AE6E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5033B86E299CB68A00AE6E2F /* LaunchScreen.storyboard */; };
+		5033B878299CBA3500AE6E2F /* RotatableKnobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B877299CBA3500AE6E2F /* RotatableKnobView.swift */; };
+		5033B87B299CBA4C00AE6E2F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5033B87A299CBA4C00AE6E2F /* SnapKit */; };
+		5033B87D299CE3A400AE6E2F /* ClampedKnobTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B87C299CE3A400AE6E2F /* ClampedKnobTransform.swift */; };
+		5033B88829B0BEEC00AE6E2F /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B88729B0BEEC00AE6E2F /* FloatExtensions.swift */; };
+		5033B88A29B0BEF900AE6E2F /* CGAffineTransformExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B88929B0BEF900AE6E2F /* CGAffineTransformExtensions.swift */; };
+		5033B88C29B0BF7F00AE6E2F /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B88B29B0BF7F00AE6E2F /* PublisherExtensions.swift */; };
+		5033B89429B0C39200AE6E2F /* RotatableKnobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033B89329B0C39200AE6E2F /* RotatableKnobTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5033B89529B0C39200AE6E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5033B858299CB68900AE6E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5033B85F299CB68900AE6E2F;
+			remoteInfo = RotatableKnob;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5033B860299CB68900AE6E2F /* RotatableKnob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotatableKnob.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +41,25 @@
 		5033B86C299CB68A00AE6E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5033B86F299CB68A00AE6E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5033B871299CB68A00AE6E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5033B877299CBA3500AE6E2F /* RotatableKnobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatableKnobView.swift; sourceTree = "<group>"; };
+		5033B87C299CE3A400AE6E2F /* ClampedKnobTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampedKnobTransform.swift; sourceTree = "<group>"; };
+		5033B88729B0BEEC00AE6E2F /* FloatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		5033B88929B0BEF900AE6E2F /* CGAffineTransformExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformExtensions.swift; sourceTree = "<group>"; };
+		5033B88B29B0BF7F00AE6E2F /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		5033B89129B0C39200AE6E2F /* RotatableKnobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotatableKnobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5033B89329B0C39200AE6E2F /* RotatableKnobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatableKnobTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5033B85D299CB68900AE6E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5033B87B299CBA4C00AE6E2F /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5033B88E29B0C39200AE6E2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5033B862299CB68900AE6E2F /* RotatableKnob */,
+				5033B89229B0C39200AE6E2F /* RotatableKnobTests */,
 				5033B861299CB68900AE6E2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5033B860299CB68900AE6E2F /* RotatableKnob.app */,
+				5033B89129B0C39200AE6E2F /* RotatableKnobTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +93,25 @@
 				5033B863299CB68900AE6E2F /* AppDelegate.swift */,
 				5033B865299CB68900AE6E2F /* SceneDelegate.swift */,
 				5033B867299CB68900AE6E2F /* ViewController.swift */,
+				5033B877299CBA3500AE6E2F /* RotatableKnobView.swift */,
+				5033B87C299CE3A400AE6E2F /* ClampedKnobTransform.swift */,
+				5033B88729B0BEEC00AE6E2F /* FloatExtensions.swift */,
+				5033B88929B0BEF900AE6E2F /* CGAffineTransformExtensions.swift */,
+				5033B88B29B0BF7F00AE6E2F /* PublisherExtensions.swift */,
 				5033B869299CB68900AE6E2F /* Main.storyboard */,
 				5033B86C299CB68A00AE6E2F /* Assets.xcassets */,
 				5033B86E299CB68A00AE6E2F /* LaunchScreen.storyboard */,
 				5033B871299CB68A00AE6E2F /* Info.plist */,
 			);
 			path = RotatableKnob;
+			sourceTree = "<group>";
+		};
+		5033B89229B0C39200AE6E2F /* RotatableKnobTests */ = {
+			isa = PBXGroup;
+			children = (
+				5033B89329B0C39200AE6E2F /* RotatableKnobTests.swift */,
+			);
+			path = RotatableKnobTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +130,30 @@
 			dependencies = (
 			);
 			name = RotatableKnob;
+			packageProductDependencies = (
+				5033B87A299CBA4C00AE6E2F /* SnapKit */,
+			);
 			productName = RotatableKnob;
 			productReference = 5033B860299CB68900AE6E2F /* RotatableKnob.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5033B89029B0C39200AE6E2F /* RotatableKnobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5033B89729B0C39200AE6E2F /* Build configuration list for PBXNativeTarget "RotatableKnobTests" */;
+			buildPhases = (
+				5033B88D29B0C39200AE6E2F /* Sources */,
+				5033B88E29B0C39200AE6E2F /* Frameworks */,
+				5033B88F29B0C39200AE6E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5033B89629B0C39200AE6E2F /* PBXTargetDependency */,
+			);
+			name = RotatableKnobTests;
+			productName = RotatableKnobTests;
+			productReference = 5033B89129B0C39200AE6E2F /* RotatableKnobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +168,10 @@
 					5033B85F299CB68900AE6E2F = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					5033B89029B0C39200AE6E2F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 5033B85F299CB68900AE6E2F;
+					};
 				};
 			};
 			buildConfigurationList = 5033B85B299CB68900AE6E2F /* Build configuration list for PBXProject "RotatableKnob" */;
@@ -111,11 +183,15 @@
 				Base,
 			);
 			mainGroup = 5033B857299CB68900AE6E2F;
+			packageReferences = (
+				5033B879299CBA4C00AE6E2F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 5033B861299CB68900AE6E2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5033B85F299CB68900AE6E2F /* RotatableKnob */,
+				5033B89029B0C39200AE6E2F /* RotatableKnobTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +207,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5033B88F29B0C39200AE6E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +222,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5033B868299CB68900AE6E2F /* ViewController.swift in Sources */,
+				5033B87D299CE3A400AE6E2F /* ClampedKnobTransform.swift in Sources */,
+				5033B88C29B0BF7F00AE6E2F /* PublisherExtensions.swift in Sources */,
+				5033B88829B0BEEC00AE6E2F /* FloatExtensions.swift in Sources */,
+				5033B878299CBA3500AE6E2F /* RotatableKnobView.swift in Sources */,
 				5033B864299CB68900AE6E2F /* AppDelegate.swift in Sources */,
+				5033B88A29B0BEF900AE6E2F /* CGAffineTransformExtensions.swift in Sources */,
 				5033B866299CB68900AE6E2F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5033B88D29B0C39200AE6E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5033B89429B0C39200AE6E2F /* RotatableKnobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5033B89629B0C39200AE6E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5033B85F299CB68900AE6E2F /* RotatableKnob */;
+			targetProxy = 5033B89529B0C39200AE6E2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5033B869299CB68900AE6E2F /* Main.storyboard */ = {
@@ -336,6 +440,42 @@
 			};
 			name = Release;
 		};
+		5033B89829B0C39200AE6E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ54S24DHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qsd.RotatableKnobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RotatableKnob.app/RotatableKnob";
+			};
+			name = Debug;
+		};
+		5033B89929B0C39200AE6E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZ54S24DHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qsd.RotatableKnobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RotatableKnob.app/RotatableKnob";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,7 +497,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5033B89729B0C39200AE6E2F /* Build configuration list for PBXNativeTarget "RotatableKnobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5033B89829B0C39200AE6E2F /* Debug */,
+				5033B89929B0C39200AE6E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5033B879299CBA4C00AE6E2F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5033B87A299CBA4C00AE6E2F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5033B879299CBA4C00AE6E2F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5033B858299CB68900AE6E2F /* Project object */;
 }
